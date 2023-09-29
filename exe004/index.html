@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adaptações</title>
+</head>
+<body>
+    <h1>Imagem Dinâmicas</h1>
+    <h2>tente abrir este site em vários dispositivos diferentes</h2>
+    <h3>Imagem P de pequena</h3>
+    <h3>Imagem M de média</h3>
+    <h3>Imagem G de grande</h3>
+    <picture>
+        <source media="(max-width:325 )" srcset="imagens/imagem_pp.png" type="image/png">
+        <source media="(max-width:725px )" srcset="imagens/imagem_p.png" type="image/png">
+        <source media="(max-width:1025px )" srcset="imagens/imagem_m.png" type="image/png">
+        <img src="imagens/imagem_g.png" alt="imagem_media">
+    </picture>
+
+</body>
+</html>

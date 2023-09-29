@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bola girando quadradamente</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+        :root {
+            --cor-01: white;
+        }
+        .classeLegal {
+            height: 500px;
+            width: 500px;
+            margin: 140px;
+            background-color: rgb(183, 183, 183);
+            border-radius: 500px;
+            box-shadow: 17px 17px 24px 10px rgba(0, 0, 0, 0.400);
+        }
+        button {
+			position: absolute;
+			/*left: 45%;*/
+            border-color: black;
+            border-color: transparent;
+			margin: 219px 10px 10px 1049px;
+            height: 135px;
+            width: 260px;
+            background-color: rgb(77, 77, 77);
+            border-radius: 500px;
+            box-shadow: 9px 16px 12px -5px rgba(0, 0, 0, 0.300);
+        }
+        button:active{
+            background-color: rgb(93, 93, 93);
+        }
+		
+		button:active > .classeLegal{
+            background-color: rgb(255, 0, 0);
+        }
+		
+    </style>
+</head>
+<body>
+	
+    <button id="peguei" type="button" onmousedown="NaoGostei()" onmouseup="Reset()">  
+         
+    </button>
+	
+	<div class="classeLegal" id="peguei2"></div>
+	
+	<script>
+	
+	var lapada = document.getElementById("peguei2");
+	var cor = "var(--cor-01)";
+	var originalStyle = lapada.style.backgroundColor;
+	
+	function NaoGostei(){
+		lapada.style.backgroundColor = cor;
+	}
+	
+	function Reset(){
+		lapada.style.backgroundColor = originalStyle;
+	}
+	
+	</script>
+
+
+</body>
+</html>

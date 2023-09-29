@@ -1,0 +1,28 @@
+@charset "UTF-8";
+a {
+    color: black;
+ }
+ a:hover {
+     color: rgb(18, 24, 186);
+ }
+ a#a1:visited {
+     color: rgb(51, 169, 31);
+ }
+ a#a2:active {
+     color: rgb(190, 26, 26);
+ }
+ li {
+     font-size: 50px;
+ }
+
+h1 {
+    text-align: center;
+}
+
+a:visited {
+    color: rgb(51, 169, 31);
+}
+
+a:active {
+    color: rgb(190, 26, 26);
+}

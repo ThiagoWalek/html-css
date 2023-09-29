@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando div com hover oculta</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        div {
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-size: 2em; 
+        }
+        div > p {
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            color: rgb(255, 0, 0);
+            background-color: black;
+        }
+        div:hover {
+ 
+            color: rgb(9, 204, 222);
+        }
+        p:hover {
+            font-size: 70px;
+        }
+        h2 {
+            text-align: right;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>div com hover oculta</h1>
+    <div>
+        Não Passe o Mouse Aqui!!!
+        <p>HAHAHA estou oculto</p>
+    </div>
+    <h2><a href="index.html" rel="prev">Voltar</a></h2>
+</body>
+</html>

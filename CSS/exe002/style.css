@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+body {
+    background-color: black;
+    font-family:Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+h2 {
+    color: rgb(117, 79, 154);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+p {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+pre {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;  
+}

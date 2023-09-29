@@ -1,0 +1,98 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Reem+Kufi+Ink&display=swap');
+
+@font-face {
+    font-family: idroid;
+    src: url(fontes/idroid.otf) format(opentype);
+}
+mark {
+    color: #0b582c;
+    background-color: #31bd70;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    height: 2000px;
+    background-color: #e8e5c2;
+}
+section {
+    height: 1600px;
+    width: 1500px;
+    background-color: white;
+    margin: 12px auto 0px auto;
+}
+h1 {
+    margin: 0px;
+    text-align: center;
+    font-size: 3em;
+    color: rgb(255, 255, 255);
+}
+h2 {
+    font-family: 'idroid';
+    margin: 0px;
+    text-align: center;
+    font-size: 2em;
+    color: rgb(0, 0, 0); 
+}
+h2.degrade {
+    background-image: linear-gradient(to left, white, lightgreen);
+    text-align: left;
+    padding-left: 10px;
+    color: #0b582c;
+}
+p {
+    color: rgb(0, 0, 0);
+    margin: 3px;
+    text-align: center;
+}
+a {
+    border-width: 5px;
+    color: rgb(196, 255, 199);
+    text-decoration: none;
+    padding: 8px;
+    background-color: rgba(0, 255, 255, 0);
+    font-size: 20px;
+}
+a:hover {
+    color: rgb(196, 255, 199);
+    background-color: #0b582c;
+    border-radius: 10px;
+}
+
+nav {
+    margin: 270px 10px 10px 10px;
+}
+header {
+    font-weight: 200;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    background-image: linear-gradient(to bottom, #31bd70, rgb(3, 50, 24));
+    background-attachment: fixed;
+    height: 410px;
+    width: 1920px;
+    margin: auto;
+    box-shadow: 1px 7px 14px 6px rgba(0, 0, 0, 0.500);
+}
+/*</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+        </section>
+        <section id="noticias">
+            <article>
+                <aside>
+                </aside>
+            </article>
+            <article>
+            </article>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+</html>*/

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Fontes externas</title>
+    <style>
+        @font-face {
+            font-family: 'Fight';/*aqui é onde fica o nome da sua font que exportou*/
+            src: url(fonts/Fighting\ Spirit\ 2.otf) format(opentype);
+            /*tipos de formatos dos arquivos: apenas os principais
+              - opentype (.otf)
+              - truetype (.ttf)
+            */
+            font-weight: normal;
+            font-size: 1em;
+            font-style: normal;
+        }
+        h1 {
+            font-family: 'Fight';
+            font-weight: normal;
+            text-align: center;
+            color: red;
+            font-size: 42px;
+        }
+        a {
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando uma fonte externa</h1>
+    <h1><a href="index002.html" rel = "next">Spider Man</a></h1>
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags ou Modelo de site</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(175, 175, 175);
+            margin: 0px;
+        }
+        header {
+            background-color: rgb(236, 236, 236);
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(172, 172, 172);
+            padding: 4px 4px 4px 5px;
+        }
+        nav > a {
+            font-weight: 500;
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            padding: 3px;
+        }
+        nav > a:hover {
+            font-weight: 500;
+            color: rgb(25, 0, 255);
+            text-decoration: underline; 
+        }
+        article {
+            background-color: lightgrey;
+            padding: 5px;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        footer {
+            background-color: black;
+            text-align: center;
+            color: rgb(255, 255, 255);
+            padding: 5px;
+            margin: 0px;
+        }
+        article > aside {
+            background-color: rgb(170, 170, 170);
+        }
+        footer > p {
+            padding: 0px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esporte e Saúde</h2>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre portugual</h2>
+                <p>assunto ----- Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus maxime sint aperiam ab, corporis labore. Accusantium nesciunt enim magni aliquam delectus, iste tempore commodi sint repudiandae, ut a, fugit aspernatur!</p>
+                <aside>
+                    <p>Artigo escrito por Fulano de Tal da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por ###########</p>
+    </footer>
+</body>
+</html>
