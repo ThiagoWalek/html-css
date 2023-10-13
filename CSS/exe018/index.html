@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>teste de animacao</title>
+    <style>
+        body {
+            background-color: bisque;
+        }
+        div {
+            height: 100px;
+            width: 300px;
+            margin: 200px auto;
+            border-color: black;
+            box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.500);
+            border-width: 2px;
+            font-size: 20px;
+            border-radius: 20px;
+            text-align: center;
+            padding-top: 85px;
+            background-color: rgb(71, 138, 210);
+            transition-duration: 0.7s;
+        }
+        div:hover {
+            height: 150px;
+            width: 350px;
+            background-color: rgb(71,138, 210);
+            text-shadow: 10px 10px 25px rgba(0, 0, 0, 0.500);
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
-    <ul list-style></ul>
+   <h1>Testando animação de um div sem javascript</h1>
+   <div>Passe o mouse aqui!</div>
 </body>
 </html>
