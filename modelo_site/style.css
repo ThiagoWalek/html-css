@@ -1,0 +1,135 @@
+@charset "UTF-8";
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 8px;
+}
+:root {
+    --cor-01:rgb(211,211,211);
+    --cor-02:rgb(192,192,192);
+    --cor-03:rgb(169,169,169);
+    --cor-04:rgb(128,128,128);
+    --cor-05:rgb(106,106,106);
+}
+
+body {
+    background-color: var(--cor-01);
+}
+header {
+    height: 65px;
+    border-color: black;
+    border-width: 2px;
+    margin: auto;
+    padding: 20px;
+    background-color: var(--cor-03);
+}
+nav {
+margin: 8px;
+}
+a.botao {
+    padding: 15px;
+    font-size: 2.5em;
+    text-decoration: none;
+    background-color: var(--cor-04);
+    color: black;
+    margin: 10px 10px 10px 10px;
+    transition-duration: 1s;
+}
+a.botao:hover {
+    background-color: black;
+    color: white; 
+}
+div {
+    border-color: black;
+    border-width: 5px;
+}
+div#principal {
+    background-color: var(--cor-05);
+    height: 1300px;
+    width: 1300px;
+    margin: auto;
+    padding: 30px;
+}
+div#exessao {
+    background-color: var(--cor-04);
+    padding: 20px;
+    height: 200px;
+    width: 1270px;
+    margin: 0px auto 0px auto;
+}
+div#exe1 {
+    height: 180px;
+    width: 980px;
+    border-width: 1px;
+    background-color: var(--cor-03);
+    display: inline-block;
+}
+div#exe2 {
+    height: 180px;
+    width: 250px;
+    background-color: var(--cor-03);
+    display: inline-block;
+    margin-left: 10px;
+}
+div.padrao {
+    background-color: var(--cor-04);
+    height: 280px;
+    width: 1270px;
+    padding: 20px;
+    margin: 70px auto 0px auto;
+}
+div#padrao-div1 {
+    background-color: var(--cor-03);
+    height: 120px;
+    width: 800px;
+    margin: 10px 0px 10px 0px;
+}
+div#padrao-div2 {
+    background-color: var(--cor-03);
+    height: 120px;
+    width: 800px;
+    margin: 10px 0px 10px 0px;
+    display: inline-block;
+}
+div#img {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    background-color: var(--cor-03);
+    margin: 0px 0px 0px 134px;
+}
+div#exe3 {
+    background-color: var(--cor-03);
+    height: 150px;
+    width: 1240px; 
+}
+div#exe4 {
+    background-color: var(--cor-03);
+    height: 75px;
+    width: 615px;
+    margin-top: 10px;
+    display: inline-block;
+}
+div#exe5 {
+    background-color: var(--cor-03);
+    height: 75px;
+    width: 615px;
+    display: inline-block; 
+    margin-top: 10px;
+    margin-left: 10px; 
+}
+footer {
+    height: 30px;
+    background-color: var(--cor-03);
+    text-align: center;
+}
+footer > a {
+    text-decoration: none;
+    font-size: 1.1em;
+}
+footer > a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
