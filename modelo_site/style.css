@@ -3,7 +3,6 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
     padding: 0px;
-    border-radius: 8px;
 }
 :root {
     --cor-01:rgb(211,211,211);
@@ -17,7 +16,7 @@ body {
     background-color: var(--cor-01);
 }
 header {
-    height: 65px;
+    min-height: 65px;
     border-color: black;
     border-width: 2px;
     margin: auto;
@@ -47,19 +46,26 @@ div {
 div#principal {
     background-color: var(--cor-05);
     height: 1300px;
+    min-width: 320px;
+    max-width: 1920px;
     width: 1300px;
     margin: auto;
     padding: 30px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
 }
 div#exessao {
     background-color: var(--cor-04);
     padding: 20px;
     height: 200px;
+    max-width: 1270px;
+    min-width: 312.42px;
     width: 1270px;
     margin: 0px auto 0px auto;
 }
 div#exe1 {
     height: 180px;
+    min-width: 241.08px;
     width: 980px;
     border-width: 1px;
     background-color: var(--cor-03);
