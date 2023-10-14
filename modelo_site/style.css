@@ -22,6 +22,7 @@ header {
     margin: auto;
     padding: 20px;
     background-color: var(--cor-03);
+    width: 100%;
 }
 nav {
 margin: 8px;
@@ -47,7 +48,7 @@ div#principal {
     background-color: var(--cor-05);
     height: 1300px;
     min-width: 320px;
-    max-width: 1920px;
+    max-width: 1300px;
     width: 1300px;
     margin: auto;
     padding: 30px;
@@ -58,7 +59,6 @@ div#exessao {
     background-color: var(--cor-04);
     padding: 20px;
     height: 200px;
-    max-width: 1270px;
     min-width: 312.42px;
     width: 1270px;
     margin: 0px auto 0px auto;
@@ -122,6 +122,7 @@ div#exe5 {
     background-color: var(--cor-03);
     height: 75px;
     width: 615px;
+    min-width: 320px;
     display: inline-block; 
     margin-top: 10px;
     margin-left: 10px; 
@@ -130,6 +131,7 @@ footer {
     height: 30px;
     background-color: var(--cor-03);
     text-align: center;
+    width: 100%;
 }
 footer > a {
     text-decoration: none;
