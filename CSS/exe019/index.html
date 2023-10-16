@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando papeis de parede</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-image:url(imagens/wallpaper001.jpg);
+        }
+        div.quadrado {
+            display: inline-block;
+            border: 2px solid black;
+            height: 300px;
+            width: 300px;
+            background-color: gray;
+        }
+        div#q1 {
+            background-color: bisque;
+        }
+        div#q2 {
+            background-image: linear-gradient(to bottom, yellow, red );
+        }
+        div#q3 {
+            background-image: url(imagens/pattern001.png);
+        }
+        div#q4 {
+            background-image: linear-gradient(to bottom, transparent, black);
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1">
+
+    </div>
+    <div class="quadrado" id="q2">
+
+    </div>
+    <div class="quadrado" id="q3">
+
+    </div>
+    <div class="quadrado" id="q4">
+       <p></p>
+    </div>
+</body>
+</html>
