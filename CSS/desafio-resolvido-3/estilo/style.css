@@ -1,0 +1,9 @@
+@charset "UTF8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html, body {
+    min-width: 100vhx;
+    background-color: darkgray;
+}
