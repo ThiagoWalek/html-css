@@ -4,6 +4,65 @@
     padding: 0px;
 }
 html, body {
-    min-width: 100vhx;
+    min-width: 100vh;
     background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    /*text-transform: uppercase;*/
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 25px;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-color: rgb(85, 30, 195);
+    color: rgb(0, 255, 68);
+}
+
+section.imagem > p {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.500);
+    width: 400px;
+    padding: 10px;
+}
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
