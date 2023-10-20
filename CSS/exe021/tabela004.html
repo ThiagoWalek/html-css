@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.500);
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            background-color: lightgray;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(2n) { /*de 2 em 2 linhas ele defina o background-color-- o odd deixa apenas as linhas impares, e even o contrario*/
+           background-color: rgba(128, 128, 128, 0.400); 
+        }
+
+        thead, tfoot {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+        td.est {
+            text-align: center;
+        }
+
+        strong {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <!--Anamotima para tabelas grandes
+    TABLE
+        CAPTION
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH 
+        TFOOT
+            TR, TD, TH
+    -->
+    <table>
+        <caption>Informações sobre as Unidades Federetiva</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">Abreviação</th>
+                <th scope="col">População</th>
+                <th scope="col">Alfabetização</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="est">SP</td>
+                <td class="num">44 169 350</td>
+                <td>97,2%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="est">MG</td>
+                <td class="num">20 777 672</td>
+                <td>93,8%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="est">BA</td>
+                <td class="num">15 150 143</td>
+                <td>87%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="est">RJ</td>
+                <td class="num">16 497 395</td>
+                <td>97,3%</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="est">CE</td>
+                <td class="num">8 867 448</td>
+                <td>84,8%</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="est">PA</td>
+                <td class="num">8 101 180</td>
+                <td>90,7%</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="est">AC</td>
+                <td class="num">795 145</td>
+                <td>86,9%</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="est">DF</td>
+                <td class="num">2 867 869</td>
+                <td>97,4%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="est">MT</td>
+                <td class="num">3 236 578</td>
+                <td>93,5%</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="est">MS</td>
+                <td class="num">2 630 098</td>
+                <td>93,7%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>0000</strong></td>
+            </tr>
+            <tr>
+                <th scope="row">Média de Alfabetizados</th>
+                <td class="num"><strong>0%</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
