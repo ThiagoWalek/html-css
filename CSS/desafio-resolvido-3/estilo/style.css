@@ -1,26 +1,14 @@
-@charset "UTF8";
+@charset "UTF-8";
 
-/*@font-face {
-    font-family: 'cordel';
-    src: url(../fontes/titulo/EldesCordel-Demo.otf) format(opentype);
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Bebas+Neue&family=Petit+Formal+Script&family=Reem+Kufi+Ink&family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Petit Formal Script', cursive;
+    --fonte3: 'Sriracha', cursive;
 }
-
-  - opentype (.otf)
-  - truetype (.ttf)
-  format(opentype);*/
-  /*:root {
-    --fonte1: Verdana, Tahoma, sans-serif;
-    --fonte2: 'cordel' ;
-    --fonte3: 'Petit Formal Script';
-}*/
-/*@font-face {
-    font-family: 'mao';
-    src: url(../fontes/paragrafo/DancingScript-Regular.ttf) format(truetype);
-}*/
-
-  @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Bebas+Neue&family=Petit+Formal+Script&family=Reem+Kufi+Ink&display=swap');
-
-  @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Bebas+Neue&family=Petit+Formal+Script&family=Reem+Kufi+Ink&family=Sriracha&display=swap');
 
 * {
     margin: 0px;
@@ -29,9 +17,9 @@
 }
 
 html, body {
-    min-width: 100vh;
+    min-height: 100vh;
     background-color: darkgray;
-
+    font-family: var(--fonte1);
 }
 
 header {
@@ -40,42 +28,36 @@ header {
     text-align: center;
 }
 
-header > h1, header > p {
-    font-family: 'Sriracha', cursive;
-    font-size: 10vw;
+header > h1 {
     padding-top: 50px;
-    /*text-transform: uppercase;*/
     font-variant: small-caps;
-    text-align: center;
+    font-family: var(--fonte3);
+    font-weight: bold;
+    font-size: 10vw;
 }
 
 header > p {
     padding-bottom: 50px;
-    font-size: 2vw;
-}
-
-
-a:hover {
-    text-decoration: underline;
 }
 
 header a, footer a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
+
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
-    padding-left: 25px;
-    font-size: 2.8vw;
-    font-family: 'Petit Formal Script', cursive;
+    padding-left: 30px;
+    font-family: var(--fonte2);
     font-weight: bold;
+    font-size: 3.5vw;
 }
 
 section > p {
@@ -88,37 +70,35 @@ section.normal {
 }
 
 section.imagem {
-    background-color: rgb(85, 30, 195);
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.500);
-    background-repeat: no-repeat;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.473);
     background-size: cover;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 section.imagem > p {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.500);
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.514);
     text-shadow: 1px 1px 0px black;
-    background-size: cover;
 }
-
 
 section#img01 {
     background-image: url('../imagens/img_joaninha.jpg');
     background-position: center center;
+    
 }
 
 section#img02 {
     background-image: url('../imagens/paginas_soltas.jpg');
-    background-position: right center;
-
+    
 }
 
 footer {
     background-color: black;
-    text-align: center;
     color: white;
+    text-align: center;
     padding: 10px;
 }
