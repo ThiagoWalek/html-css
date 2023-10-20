@@ -22,20 +22,16 @@
 
   @import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink&family=Bebas+Neue&family=Petit+Formal+Script&family=Reem+Kufi+Ink&family=Sriracha&display=swap');
 
-
-p {
-    width: 100%;
-}
-
-
 * {
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 html, body {
     min-width: 100vh;
     background-color: darkgray;
+
 }
 
 header {
@@ -44,12 +40,13 @@ header {
     text-align: center;
 }
 
-header > h1 {
+header > h1, header > p {
     font-family: 'Sriracha', cursive;
-    font-size: 8vw;
+    font-size: 10vw;
     padding-top: 50px;
     /*text-transform: uppercase;*/
     font-variant: small-caps;
+    text-align: center;
 }
 
 header > p {
@@ -93,6 +90,9 @@ section.normal {
 section.imagem {
     background-color: rgb(85, 30, 195);
     box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.500);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p {
@@ -108,21 +108,17 @@ section.imagem > p {
 section#img01 {
     background-image: url('../imagens/img_joaninha.jpg');
     background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 section#img02 {
     background-image: url('../imagens/paginas_soltas.jpg');
     background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+
 }
 
 footer {
     background-color: black;
-    color: white;
     text-align: center;
+    color: white;
     padding: 10px;
 }
