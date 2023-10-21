@@ -6,33 +6,57 @@
     <title>Testando por conta</title>
     <style>
         /*teste falhou adquirir conhecimento e arrumar*/
+        :root {
+            --cor1:#cbffcb;
+            --cor2:rgb(79, 108, 36);
+            --cor3:#4FEF08;
+            --cor4:#00EA54;
+        }
         * {
             margin: 0px;
             padding: 0px;
         }
         body {
-            background-color: rgb(79, 108, 36);
+            background-color: var(--cor2);
             height: 1500px;
         }
         header {
             background-color: green;
-            background-attachment: fixed;
+            position: sticky;
+            top: 0;
+            padding: 10px;
         }
         a {
             text-decoration: none;
             font-size: 2em;
             color: white;
+            background-color: var(--cor4);
+            padding: 5px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.500);
         }
         nav {
             margin-top: 30px;
             padding: 10px;
         }
         a:hover {
-            text-decoration: underline;
             color: rgb(164, 228, 3);
         }
         p {
             font-size: 100%;
+        }
+        div {
+            color: rgb(0, 0, 0);
+            background-color: var(--cor1);
+            width: 560px;
+            min-width: 400px;
+            padding: 10px;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 10px;
+            text-align: center;
+            margin: auto;
+        }
+        div section {
+            padding-top: 20px;
         }
     </style>
 </head>
@@ -40,13 +64,32 @@
     <header>
         <h1>Tentando fixar menu</h1>
         <nav>
-            <a href="#">teste1</a>
-            <a href="#">teste2</a>
-            <a href="#">teste3</a>
+            <a href="#">Inicio</a>
+            <a href="#">Sobre</a>
+            <a href="#">Contato</a>
         </nav>
     </header>
     <section>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi exercitationem ex dolor veritatis beatae in incidunt iure totam, quibusdam dolorem dolorum fuga enim vel aliquid temporibus delectus maiores! Consequuntur, cumque. lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam repudiandae laborum enim ullam natus laboriosam amet vero quos voluptatibus quaerat ea expedita voluptas eum neque, soluta, consequuntur non minima.</p>
+        <div>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, suscipit quam! Maxime, quod nobis! Aliquam ea sapiente nam alias labore eos fugiat, rem animi sed asperiores quis dolorum nostrum suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia libero aperiam illum similique veritatis eius repudiandae magnam error dicta accusantium. Mollitia odit quaerat sequi quidem velit? Excepturi neque animi ullam! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi exercitationem ex dolor veritatis beatae in incidunt iure totam, quibusdam dolorem dolorum fuga enim vel aliquid temporibus delectus maiores! Consequuntur, cumque. lore Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab magnam repudiandae laborum enim ullam natus laboriosam amet vero quos voluptatibus quaerat ea expedita voluptas eum neque, soluta, consequuntur non minima.</p>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque in possimus eum nulla, sed ex quod inventore, optio facilis atque suscipit delectus? Velit corrupti totam aut vel fugiat autem ipsum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi minima libero necessitatibus quae molestias hic facere asperiores, nemo velit dolorum reprehenderit quidem natus, inventore tempore culpa deleniti porro, quam doloremque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odit fugit praesentium ratione laboriosam accusamus, dolorem commodi culpa est inventore illo perferendis quam iusto iste alias porro? Consequuntur, doloribus repellat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis quia excepturi incidunt praesentium mollitia! Quisquam, nulla? Saepe illo reiciendis nobis, enim quo veniam distinctio, aliquam similique eligendi facere unde soluta.</p>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quaerat quae unde explicabo iure consequatur ea dolorum a eos consectetur itaque, nisi architecto corrupti cupiditate similique libero adipisci modi repudiandae? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam eaque sequi quae quo veritatis ratione? Provident quisquam in praesentium facilis a officiis consectetur recusandae, fuga earum. Vel id molestias sit! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia quidem voluptatem ipsa cupiditate deleniti expedita animi, doloremque at atque exercitationem, porro vitae nam et sapiente quae veniam? Repellat, mollitia veritatis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam, repellendus vel sunt exercitationem qui enim dolore? Tempora quidem provident ea a accusamus deserunt, earum sequi sed officiis numquam, eaque saepe. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum possimus, eius dolorum temporibus excepturi natus unde veritatis dolorem blanditiis ratione esse ullam tempore, ea ducimus aut quia voluptatibus quod asperiores!</p>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, eos pariatur assumenda quidem, deleniti hic impedit laudantium dolore est a provident. Recusandae deleniti laudantium, sint suscipit a ratione alias qui. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores distinctio, nisi id excepturi amet doloremque consectetur, corporis quisquam aperiam explicabo quae, iste officiis nam esse nobis sunt magnam ab? Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, quos assumenda ea perferendis nesciunt excepturi iure voluptas animi, ducimus placeat quidem harum labore obcaecati maiores, vero velit magni nihil. Molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum enim beatae itaque officiis nemo repellendus dolor, hic labore ex, suscipit magni ipsum incidunt omnis, obcaecati at nostrum! Nam, aperiam officia?</p>
+            </section>
+            <section>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit culpa, earum impedit provident omnis optio ab tempore dignissimos vitae, assumenda a, libero quis voluptate accusamus aperiam animi debitis! Consequuntur, perferendis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae expedita soluta, enim quibusdam ab quos. Quasi totam quas quo suscipit aperiam, a unde odit, assumenda id impedit rerum est placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat fuga nobis cum! Reprehenderit magni ipsam alias eius qui magnam ullam non, beatae perspiciatis rem, sit odio quisquam quasi officia. Aut. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, deserunt aliquam suscipit itaque voluptatem repellat sint sapiente beatae alias. Exercitationem ut rem sequi aperiam vitae, fuga sunt laborum libero sint?</p>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore neque minima tempore est architecto incidunt obcaecati, quod tenetur officiis, amet, ipsa sunt. Accusantium excepturi libero distinctio quae consequatur rerum atque? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos laudantium quis corporis earum vitae libero veritatis, nulla laboriosam at reiciendis numquam ratione, itaque a saepe placeat. Ipsum, minima? Nisi, et? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, voluptatum saepe earum voluptate distinctio, aliquid, doloremque sunt dolore mollitia fugit numquam quia voluptas dolorum vel. Recusandae quaerat architecto adipisci nisi.</p>
+            </section>
+        </div>
     </section>
 </body>
 </html>

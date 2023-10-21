@@ -13,6 +13,7 @@
             width: 500px;
             border-collapse: collapse;
             box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.500);
+            position: relative;
         }
 
         td, th {
@@ -32,8 +33,14 @@
         }
 
         thead, tfoot {
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(87, 87, 87);
             color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: rgb(87, 87, 87);
         }
 
         td.num {
@@ -42,10 +49,6 @@
 
         td.est {
             text-align: center;
-        }
-
-        strong {
-            font-weight: bold;
         }
     </style>
 </head>
@@ -66,81 +69,125 @@
         <thead>
             <tr>
                 <th scope="col">Estado</th>
-                <th scope="col">Abreviação</th>
                 <th scope="col">População</th>
-                <th scope="col">Alfabetização</th>
+
             </tr>
         </thead>
         <tbody>
             <tr>
                 <td>São Paulo</td>
-                <td class="est">SP</td>
                 <td class="num">44 169 350</td>
-                <td>97,2%</td>
+
             </tr>
             <tr>
                 <td>Minas Gerais</td>
-                <td class="est">MG</td>
                 <td class="num">20 777 672</td>
-                <td>93,8%</td>
             </tr>
             <tr>
                 <td>Bahia</td>
-                <td class="est">BA</td>
                 <td class="num">15 150 143</td>
-                <td>87%</td>
             </tr>
             <tr>
                 <td>Rio de Janeiro</td>
-                <td class="est">RJ</td>
                 <td class="num">16 497 395</td>
-                <td>97,3%</td>
             </tr>
             <tr>
                 <td>Ceará</td>
-                <td class="est">CE</td>
                 <td class="num">8 867 448</td>
-                <td>84,8%</td>
             </tr>
             <tr>
                 <td>Pará</td>
-                <td class="est">PA</td>
                 <td class="num">8 101 180</td>
-                <td>90,7%</td>
             </tr>
             <tr>
                 <td>Acre</td>
-                <td class="est">AC</td>
                 <td class="num">795 145</td>
-                <td>86,9%</td>
             </tr>
             <tr>
                 <td>Distrito Federal</td>
-                <td class="est">DF</td>
                 <td class="num">2 867 869</td>
-                <td>97,4%</td>
             </tr>
             <tr>
                 <td>Mato Grosso</td>
-                <td class="est">MT</td>
                 <td class="num">3 236 578</td>
-                <td>93,5%</td>
             </tr>
             <tr>
                 <td>Mato Grosso do Sul</td>
-                <td class="est">MS</td>
                 <td class="num">2 630 098</td>
-                <td>93,7%</td>
+            </tr>
+            <tr>
+                <td>Alagoas --</td>
+                <td class="num">3 327 551</td>
+            </tr>
+            <tr>
+                <td>Amapá</td>
+                <td class="num">756 500</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">3 893 763</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">3 894 899</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 551 322</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td class="num">6 861 924</td>
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">3 950 359</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11 112 062</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9 297 861</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3 198 185</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3 419 550</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11 228 091</td>
+            </tr>
+            <tr>
+                <td>Rondônia</td>
+                <td class="num">1 755 015</td>
+            </tr>
+            <tr>
+                <td>Roraima</td>
+                <td class="num">500 826</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6 734 568</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td class="num">2 227 294</td>
+            </tr>
+            <tr>
+                <td>Tocantins</td>
+                <td class="num">1 502 759</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
                 <th scope="row">Total de Habitantes</th>
-                <td class="num"><strong>123 092 878</strong></td>
-            </tr>
-            <tr>
-                <th scope="row">Média de Alfabetizados</th>
-                <td class="num"><strong>92,2%</strong></td>
+                <td class="num"><strong>203 305 407</strong></td>
             </tr>
         </tfoot>
     </table>
