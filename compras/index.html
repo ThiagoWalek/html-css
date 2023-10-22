@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compras</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        html, body {
+            font-size: 1.2em;
+        }
+        :root {
+            --cor1:gray;
+            --cor2: rgb(0, 0, 135);
+            --cor3: rgb(54, 54, 255);
+            --cor4: rgb(26, 26, 212);
+        }
+        body {
+            background-color: var(--cor3);
+        }
+        header {
+            background-color: var(--cor1);
+            position: sticky;
+            top: 0;
+            height: 60px;
+            padding-top: 50px;
+            padding-left: 10px;
+        }
+        div {
+            margin: auto;
+            background-color: white;
+            width: 600px;
+            padding: 17px;
+        }
+        nav a {
+            color: rgb(126, 220, 18);
+            text-decoration: none;
+            background-color: var(--cor2);
+            border-radius: 5px;
+            padding: 10px;
+            margin-right: 6px;
+        }
+        nav a:hover {
+            color: var(--cor2);
+            background-color: rgb(126, 220, 18);
+        }
+        li {
+            margin: 10px 0px;
+        }
+        section {
+            padding: 10px;
+        }
+        section > ul > li > a {
+            text-decoration: none;
+            color: black;
+        }
+        section > ul > li > a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">PC</a>
+            <a href="#">Camera</a>
+            <a href="#">Iphone</a>
+        </nav>
+    </header>
+    <div>
+        <section>
+            <h1>Compras:</h1>
+            <ul>
+                <li><a href="https://www.amazon.com.br/FITA-5050-IP65-CONTROLE-FONTE/dp/B08LZPZSPB/ref=asc_df_B08LZPZSPB/?tag=googleshopp00-20&linkCode=df0&hvadid=379698899401&hvpos=&hvnetw=g&hvrand=9089393304210687208&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9100211&hvtargid=pla-1031262514201&psc=1" target="_blank">Fita Led</a></li>
+                <li><a href="https://www.trocafone.com.br/iphone-11-64gb-preto-outlet-68370/p?idsku=34179&gclid=CjwKCAjwkNOpBhBEEiwAb3MvvfFEvkOFy-n3tSVrgRBRiDM1lYHfW71gNF4IF7B2M4AKu0L-UcIvwxoCHx0QAvD_BwE" target="_blank">Iphone</a></li>
+                <li><a href="">Computador</a></li>
+                <li><a href="">Camera</a></li>
+                <li><a href="https://www.amazon.com.br/Logitech-LIGHTSYNC-Efeito-Bot%C3%B5es-Program%C3%A1veis/dp/B087CT8PWY/ref=sr_1_5?crid=2OOPK8NWPWUDF&keywords=mouse%2Blogitech&qid=1697982829&sprefix=mouse%2Blo%2Caps%2C298&sr=8-5&ufe=app_do%3Aamzn1.fos.6121c6c4-c969-43ae-92f7-cc248fc6181d&th=1" target="_blank">Mouse</a></li>
+                <li><a href="">Teclado</a></li>
+                <li><a href="">Mouse Pad</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
