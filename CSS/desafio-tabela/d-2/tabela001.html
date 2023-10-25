@@ -3,9 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+        td, th {
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <th rowspan="5" scope="rowgroup">Exatadas</th>
+            </tr>
+
+            <tr>
+                <th>Matemática</th>
+                <td>0,00</td>
+                <td>0,00</td>
+                <td>0,00</td>
+            </tr>
+            <tr>
+                <th>Física</th>
+                <td>0,00</td>
+                <td>0,00</td>
+                <td>0,00</td>
+            </tr>
+            <tr>
+                <th>Química</th>
+                <td>0,00</td>
+                <td>0,00</td>
+                <td>0,00</td>
+            </tr>
+            <tr>
+                <th>Biologia</th>
+                <td>0,00</td>
+                <td>0,00</td>
+                <td>0,00</td>
+            </tr>
+            <tr class="style001">
+                <th colspan="4">Média de Exatadas</th>
+                <td>0,00</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Humanas</th>
+            </tr>
+            <tr>
+                <th>História</th>
+            </tr>
+            <tr>
+                <th>Geografia</th>
+            </tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
 </body>
 </html>
