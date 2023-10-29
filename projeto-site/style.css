@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+:root {
+   /* Branco, amarelo, laranja, rosa e preto.*/
+    --cor1: rgb(188, 188, 40);
+    --cor2: rgb(124, 96, 44);
+    --cor3: rgb(240, 152, 167);
+}
+* {
+    padding: 0px;
+    margin: 0px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.img {
+    background-image: url(imagens/bolo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    padding: 30px;
+    background-color: var(--cor1);
+}
+header > nav > a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    color: black;
+    padding: 10px;
+    background-color: var(--cor2);
+    transition-duration: 0.8s;
+}
+header > nav > a:hover {
+    background-color: black;
+    color: var(--cor2);
+}
