@@ -4,8 +4,171 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.500);
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        tr:nth-child(2n) {
+            background-color: rgb(192, 192, 192);
+        }
+       /* col.cprodutos {
+            background-color: rgb(255, 118, 140);
+        }*/
+        tr#inicial {
+            color: white;
+            background-color: black;
+        }
+        caption {
+            margin-bottom: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        div#container {
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
-    <h1>Responsividades em Tabelas</h1>
+    <h1>Tabelas em Telas Pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam repellat quisquam ex autem debitis reprehenderit inventore, non cum iste eaque enim beatae, fugiat similique quasi, earum nemo! Iste, ratione sit! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto neque possimus nulla laborum voluptatem. Ad itaque dolore ab dicta exercitationem consequuntur molestiae. Sit libero consectetur sapiente repudiandae rerum dolorum facilis?</p>
+    <h2>Responsividades em Tabelas</h2>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="cprodutos">
+                <col class="cjan">
+                <col class="cfev">
+                <col class="cmar">
+                <col class="cabr">
+                <col class="cmai">
+                <col class="cjun">
+                <col class="cjul">
+                <col class="cago">
+                <col class="cset">
+                <col class="cout">
+                <col class="cnov">
+                <col class="cdez">
+            </colgroup>
+            <caption>Produtos Vendidos e Quantidades Vendidas</caption>
+            <thead>
+                <tr id="inicial">
+                    <th scope="col">Produtos</th>
+                    <th scope="col">Jan</th>
+                    <th scope="col">Fev</th>
+                    <th scope="col">Mar</th>
+                    <th scope="col">Abr</th>
+                    <th scope="col">Mai</th>
+                    <th scope="col">Jun</th>
+                    <th scope="col">Jul</th>
+                    <th scope="col">Ago</th>
+                    <th scope="col">Set</th>
+                    <th scope="col">Out</th>
+                    <th scope="col">Nov</th>
+                    <th scope="col">Dez</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">TV</th>
+                    <td>01</td>
+                    <td>10</td>
+                    <td>03</td>
+                    <td>09</td>
+                    <td>18</td>
+                    <td>07</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">Alexa</th>
+                    <td>01</td>
+                    <td>10</td>
+                    <td>03</td>
+                    <td>09</td>
+                    <td>18</td>
+                    <td>07</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">Playstation</th>
+                    <td>01</td>
+                    <td>10</td>
+                    <td>03</td>
+                    <td>09</td>
+                    <td>18</td>
+                    <td>07</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">Vaporizador</th>
+                    <td>01</td>
+                    <td>10</td>
+                    <td>03</td>
+                    <td>09</td>
+                    <td>18</td>
+                    <td>07</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">Airfryer</th>
+                    <td>01</td>
+                    <td>10</td>
+                    <td>03</td>
+                    <td>09</td>
+                    <td>18</td>
+                    <td>07</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th scope="row">Ipad mini</th>
+                    <td>01</td>
+                    <td>10</td>
+                    <td>03</td>
+                    <td>09</td>
+                    <td>18</td>
+                    <td>07</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>04</td>
+                    <td>05</td>
+                    <td>01</td>
+                    <td>12</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
