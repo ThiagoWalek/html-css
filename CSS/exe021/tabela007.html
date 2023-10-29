@@ -14,6 +14,19 @@
         }
         th, td {
             border: 1px solid black;
+            padding: 10px;
+        }
+        col.cnome {
+            background-color: blanchedalmond;
+        }
+        col.csexo {
+            background-color: rgb(199, 255, 255);
+        }
+        col.cidade {
+            background-color: rgb(133, 255, 160);
+        }
+        col.cprofissao {
+            background-color: gray;
         }
     </style>
 </head>
@@ -23,16 +36,16 @@
     <h2>Cadastro</h2>
     <table>
         <colgroup>
-            <col>
-            <col>
-            <col>
-            <col>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprofissao">
         </colgroup>
         <tr>
-            <th>Nome</th>
-            <th>Sexo</th>
-            <th>Idade</th>
-            <th>Profissão</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
         </tr>
         <tr>
             <td>José Souza</td>
