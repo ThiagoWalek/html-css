@@ -2,8 +2,8 @@
 
 :root {
    /* Branco, amarelo, laranja, rosa e preto.*/
-    --cor1: rgb(188, 188, 40);
-    --cor2: rgb(124, 96, 44);
+    --cor1: #bcbc28;
+    --cor2: rgb(147, 95, 0);
     --cor3: rgb(240, 152, 167);
 }
 * {
@@ -14,10 +14,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 div.img {
-    background-image: url(imagens/bolo.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
+    width: 100%;
+    background-color: aqua;
+    height: 38vh;
+    margin: auto;
+    background-image: url(imagens/bolo-caseiro.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    margin-bottom: 10px;
 }
 header {
     padding: 30px;
@@ -35,4 +41,24 @@ header > nav > a {
 header > nav > a:hover {
     background-color: black;
     color: var(--cor2);
+    cursor: pointer;
+}
+main {
+    width: 80vw;
+    background-color: var(--cor2);
+    height: 2000px;
+    margin: auto;
+    max-width: 1440px;
+    min-width: 400px;
+}
+main > section > p {
+    color: white;
+}
+section {
+    margin: 0px 20px;
+}
+@media (min-width: 320px){
+    div.img {
+        height: 40vh;
+    }
 }
