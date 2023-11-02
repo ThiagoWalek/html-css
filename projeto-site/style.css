@@ -2,7 +2,7 @@
 
 :root {
    /* Branco, amarelo, laranja, rosa e preto.*/
-    --cor1: #bcbc28;
+    --cor1: #bcbc2852;
     --cor2: rgb(147, 95, 0);
     --cor3: rgb(240, 152, 167);
 }
@@ -12,6 +12,7 @@
 }
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(131, 112, 107);
 }
 div.img {
     width: 100%;
@@ -28,6 +29,8 @@ div.img {
 header {
     padding: 30px;
     background-color: var(--cor1);
+    position: sticky;
+    top: 0;
 }
 header > nav > a {
     text-align: center;
