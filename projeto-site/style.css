@@ -61,4 +61,7 @@ section {
     div.img {
         height: 40vh;
     }
+    main {
+       width: 100vw;
+    }
 }
