@@ -104,4 +104,8 @@ section {
     div.padrao {
         width: 90vw;
     }
+    div.imagem {
+        width: 370px;
+        height: 370px;
+    }
 }
