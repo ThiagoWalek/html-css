@@ -2,9 +2,10 @@
 
 :root {
    /* Branco, amarelo, laranja, rosa e preto.*/
-    --cor1: #bcbc2852;
-    --cor2: rgb(147, 95, 0);
+    --cor1: rgba(136, 86, 7, 0.449);
+    --cor2: rgb(202, 131, 0);
     --cor3: rgb(240, 152, 167);
+    --cor4: rgb(221, 221, 221);
 }
 * {
     padding: 0px;
@@ -26,6 +27,36 @@ div.img {
     background-attachment: fixed;
     margin-bottom: 10px;
 }
+div.padrao {
+    height: 480px;
+    width: 600px;
+    background-color:var(--cor4);
+    margin: auto;
+    margin-bottom: 50px;
+    padding: 10px;
+    max-width: 900px;
+}
+a  div.padrao {
+    text-decoration: none;
+}
+div.padrao > h2 {
+    margin-bottom: 10px;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+div.imagem > img{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+}
+div.imagem {
+    margin: auto;
+    height: 400px;
+    width: 390px;
+    margin-top: 10px;
+}
 header {
     padding: 30px;
     background-color: var(--cor1);
@@ -46,16 +77,18 @@ header > nav > a:hover {
     color: var(--cor2);
     cursor: pointer;
 }
-main {
-    width: 80vw;
+main.m2 {
     background-color: var(--cor2);
     height: 2000px;
     margin: auto;
-    max-width: 1440px;
-    min-width: 400px;
+    max-width: 1300px;
+    padding-top: 100px;
 }
-main > section > p {
-    color: white;
+main.m1 {
+    background-color: var(--cor2);
+    height: 2000px;
+    margin: auto;
+    max-width: 1300px;  
 }
 section {
     margin: 0px 20px;
@@ -64,7 +97,11 @@ section {
     div.img {
         height: 40vh;
     }
+
     main {
-       width: 100vw;
+       width: 96vw;
+    }
+    div.padrao {
+        width: 90vw;
     }
 }
