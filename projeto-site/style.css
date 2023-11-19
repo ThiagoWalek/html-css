@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
+@font-face {
+    font-family: bol;
+    src: url(fontes/All\ Star\ Resort.ttf);
+}
 :root {
    /* Branco, amarelo, laranja, rosa e preto.*/
     --cor1: rgba(136, 86, 7, 0.449);
     --cor2: rgb(202, 131, 0);
     --cor3: rgb(240, 152, 167);
     --cor4: rgb(221, 221, 221);
+    --font-bolo: 'bol';
 }
 * {
     padding: 0px;
@@ -45,6 +50,7 @@ div.padrao > h2 {
 a {
     text-decoration: none;
     color: black;
+    margin-left: 10px;
 }
 div.imagem > img{
     height: 100%;
@@ -90,8 +96,16 @@ main.m1 {
     margin: auto;
     max-width: 1300px;  
 }
+main.receita {
+    margin: 30px 0px 0px 25px;
+    width: 94vw;
+}
 section {
     margin: 0px 20px;
+}
+h1.bolo-txt {
+    font-family: var(--font-bolo);
+    font-size: 2em;
 }
 @media (min-width: 320px){
     div.img {
