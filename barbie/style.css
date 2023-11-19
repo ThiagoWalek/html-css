@@ -6,6 +6,7 @@
 }
 :root {
     --font-barbie: 'barbie';
+    --color1: yellow;
 }
 
 body {
@@ -16,18 +17,15 @@ body {
     height: 3000px;
 }
 h1 {
-    margin: 10px;
-}
-h1 {
-    padding: 10px;
     font-size: 2em;
     font-weight: bolder;
-    background-color: rgb(164, 33, 100);
-    color: rgb(255, 0, 191);
+    color: var(--color1);
     font-family: var(--font-barbie);
 }
 .cont {
-
+    text-align: center;
+    background-color: rgb(164, 33, 100);
+    padding: 2px;
 }
 .img {
     height: 500px;
@@ -37,8 +35,17 @@ h1 {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+div.img > div.text > p {
+    font-size: 1.5em;
+    color: black;
+}
+div.img > div.text {
+    background-color: rgba(0, 0, 0, 0.174);
+    width: 50vw;
+    margin: 20px 0px 0px 20px;
+}
 @media (min-width: 320px){
     .img {
-        height: 250px;
+        height: 280px;
     }
 }
