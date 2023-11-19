@@ -16,10 +16,13 @@ body {
     font-weight: normal;
     height: 3000px;
 }
-h1 {
+h1.first {
     font-size: 2em;
     font-weight: bolder;
     color: var(--color1);
+    font-family: var(--font-barbie);
+}
+h1 {
     font-family: var(--font-barbie);
 }
 .cont {
@@ -42,10 +45,35 @@ div.img > div.text > p {
 div.img > div.text {
     background-color: rgba(0, 0, 0, 0.174);
     width: 50vw;
-    margin: 20px 0px 0px 20px;
+    padding: 5px;
+    text-align: center;
+}
+div.img {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+div.input {
+    height: 70px;
+    width: 390px;
+    display: inline-block;
+    background-color: pink;
+    font-size: 4em;
+    text-align: center;
+    font-family: var(--font-barbie);
+    transition-duration: 0.8s;
+    margin: 20px;
+    color: black;
+}
+.input:hover {
+    background-color: black;
+    color: pink;
+
 }
 @media (min-width: 320px){
     .img {
-        height: 280px;
+        height: 400px;
+    }
+    .input {
+        margin: 0px;
     }
 }
