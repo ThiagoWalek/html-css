@@ -105,7 +105,16 @@ section {
 }
 h1.bolo-txt {
     font-family: var(--font-bolo);
-    font-size: 2em;
+    font-size: 6vw;
+}
+section {
+    margin: 15px 0px;
+}
+.txt-padrao {
+    font-size: 3vw;
+}
+.txt-h2 {
+    font-size: 3.7vw;
 }
 @media (min-width: 320px){
     div.img {
