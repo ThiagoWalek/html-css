@@ -126,21 +126,23 @@ div.escolha {
     height: 300px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
     margin: 30px auto 20px auto;
 }
 div#escolha1 {
     background-image: url(imagens/bolo-caseiro.jpg);
+    background-position: center center;
 }
 div#escolha2 {
     background-image: url(imagens/bolo-fuba.jpeg);
+    background-position: center right;
 }
 div.botao {
     margin: 20px auto 0px auto;
     color: #4F2E21;
     background-color: #FFD700;
-    height: 20px;
-    width: 200px;
+   /* height: 20px;
+    width: 200px;*/
+    width: 60vw;
     padding: 10px;
     border: 1px solid black;
     border-radius: 20px;
