@@ -116,6 +116,42 @@ section {
 .txt-h2 {
     font-size: 3.7vw;
 }
+div.menu {
+    font-family: var(--font-bolo);
+    font-size: 6.5vw;
+    margin-left: 25px;
+}
+div.escolha {
+    width: 60vw;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 30px auto 20px auto;
+}
+div#escolha1 {
+    background-image: url(imagens/bolo-caseiro.jpg);
+}
+div#escolha2 {
+    background-image: url(imagens/bolo-fuba.jpeg);
+}
+div.botao {
+    margin: 20px auto 0px auto;
+    color: #4F2E21;
+    background-color: #FFD700;
+    height: 20px;
+    width: 200px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 4vw;
+    text-align: center;
+}
+div.botao:hover {
+    color: #FFD700;
+    background-color: #4F2E21;
+    cursor: pointer;
+}
 @media (min-width: 320px){
     div.img {
         height: 40vh;
