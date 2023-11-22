@@ -39,7 +39,8 @@ div.padrao {
     margin: auto;
     margin-bottom: 50px;
     padding: 10px;
-    max-width: 900px;
+    max-width: 900px;/*deixa tudo junto com inline-block arrumar!!!*/
+    /*display: inline-block;*/
 }
 a  div.padrao {
     text-decoration: none;
@@ -152,6 +153,17 @@ div.botao {
 div.botao:hover {
     color: #FFD700;
     background-color: #4F2E21;
+    cursor: pointer;
+}
+div.x {
+    margin-left: 78vw;
+    display: inline-block;
+}
+div.x > img {
+    width: 10vw;
+    height: 10vw;
+}
+div.x > img:hover {
     cursor: pointer;
 }
 @media (min-width: 320px){
