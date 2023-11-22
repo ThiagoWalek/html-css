@@ -45,6 +45,9 @@ div.padrao {
 a  div.padrao {
     text-decoration: none;
 }
+a div.padrao:hover {
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.500);
+}
 div.padrao > h2 {
     margin-bottom: 10px;
 }
@@ -90,6 +93,7 @@ main.m2 {
     margin: auto;
     max-width: 1300px;
     padding-top: 100px;
+    box-shadow: 0px 11px 10px 10px rgba(0, 0, 0, 0.500);
 }
 main.m1 {
     background-color: var(--cor2);
