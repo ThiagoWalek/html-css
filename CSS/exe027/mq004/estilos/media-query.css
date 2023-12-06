@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+/* Todas as medias */
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    font-size: 1.5em;
+    box-sizing: border-box;
+}
+body, html {
+    width: 100vw;
+    height: 100vh;
+}
+body {
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+
+}
+main {
+    background-color: rgba(255, 255, 255, 0.656);
+    width: 90vw;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
