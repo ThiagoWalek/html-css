@@ -11,7 +11,8 @@
 
         <p>
             <label for="iano">Em que Ano Nasceu?</label>
-            <input type="number" name="ano" id="iano" required min="1900" max="2023" oninput="iidade.innerHTML = 2023 - Number(iano.value)">
+            <input type="number" name="ano" id="iano" required min="1900" max="2023" oninput="calc_ano()">
+            <!--oninput="iidade.innerHTML = 2023 - Number(iano.value)" forma que eu achei colocando a data manualmente, a função captura a data atual-->
         </p>
         <p>
             <label for="iidade">Idade: </label>
@@ -23,5 +24,13 @@
             <input type="reset" value="Limpar">
         </p>
     </form>
+
+    <script>
+       function calc_ano() {
+            let ano_atual = new Date().getFullYear()
+            var idade = ano_atual - Number(iano.value)
+            iidade.innerHTML = idade 
+       }
+    </script>
 </body>
 </html>
