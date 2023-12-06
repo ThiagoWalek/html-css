@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,26 @@
 <body>
     <h1>Teste de Formulário</h1>
     <form action="cadastro.php" method="post">
-        
+        <fieldset>
+            <legend>Sexo:</legend>
+                <input type="radio" name="sexo" id="imas" checked>
+                <label for="imas">Masculino</label><br>
+
+                <input type="radio" name="sexo" id="ifem">
+                <label for="ifem">Feminino</label>
+        </fieldset>
+        <fieldset>
+            <legend>Idade</legend>
+            <input type="number" name="idade" id="iidade" min="1" max="120" required placeholder="a partir 1">
+            <label for="iidade">Idade</label>
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="esfut" id="iesfut"> <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="escor" id="iescor" checked> <label for="iescor">Corrida</label><br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
+            <input type="checkbox" name="escic" id="iescic"> <label for="iescic">Ciclismo</label><br>
+        </fieldset>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
